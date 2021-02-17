@@ -11,12 +11,12 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-
+@Story("Text box")
+@Feature("Fill the Text box")
 public class TextBoxTests extends TestBase {
 
     @Test
-    @Story("Text box")
-    @Feature("Fill the Text box")
+
     @DisplayName("Successful filling of the text box")
     void fillFormTest() {
         step("Open Text Box form", () -> {
@@ -41,8 +41,6 @@ public class TextBoxTests extends TestBase {
     }
 
     @Test
-    @Story("Text box")
-    @Feature("Unsuccessful filling of the Text box")
     @DisplayName("Unsuccessful fill text box form with wrong email")
     void wrongEmailTest() {
         step("Open Text Box form", () -> {

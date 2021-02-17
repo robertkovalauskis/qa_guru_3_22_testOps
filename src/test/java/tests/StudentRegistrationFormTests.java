@@ -18,12 +18,11 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-
+@Story("Fill the Student registration form")
+@Feature("Student registration")
 public class StudentRegistrationFormTests extends TestBase {
 
     @Test
-    @Story("Fill the Student registration form")
-    @Feature("Student registration")
     @DisplayName("Successful fill registration form")
     void successfulFillFormTest() {
         Faker faker = new Faker();
