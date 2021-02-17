@@ -6,6 +6,7 @@ import com.github.javafaker.service.RandomService;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -101,6 +102,7 @@ public class StudentRegistrationFormTests extends TestBase {
     }
 
     @Test
+    @Disabled
     @DisplayName("Unsuccessful fill registration form with short phone number")
     void unsuccessfulFillFormWithShortPhoneTest() {
         Faker faker = new Faker();
