@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-@Feature("Form fill tests")
+@Feature("Fill the form test")
 @Story("Text box")
 public class TextBoxTests extends TestBase {
 

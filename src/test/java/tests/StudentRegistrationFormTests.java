@@ -18,7 +18,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-@Feature("Form fill tests")
+@Feature("Fill the form test")
 @Story("Student registration")
 public class StudentRegistrationFormTests extends TestBase {
 
@@ -163,7 +163,6 @@ public class StudentRegistrationFormTests extends TestBase {
             $("#submit").click();
         });
 
-        // todo bad assert
         step("Verify successful form submit", () -> {
             $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
             $x("//td[text()='Student Name']").parent().shouldHave(text(firstName + " " + lastName));
