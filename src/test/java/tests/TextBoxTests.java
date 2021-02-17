@@ -15,8 +15,8 @@ import static io.qameta.allure.Allure.step;
 public class TextBoxTests extends TestBase {
 
     @Test
-    @Feature("Fill the form test")
     @Story("Text box")
+    @Feature("Fill the Text box")
     @DisplayName("Successful filling of the text box")
     void fillFormTest() {
         step("Open Text Box form", () -> {
@@ -41,8 +41,8 @@ public class TextBoxTests extends TestBase {
     }
 
     @Test
-    @Feature("Unsuccessful filling of the form")
     @Story("Text box")
+    @Feature("Unsuccessful filling of the Text box")
     @DisplayName("Unsuccessful fill text box form with wrong email")
     void wrongEmailTest() {
         step("Open Text Box form", () -> {

@@ -22,8 +22,8 @@ import static io.qameta.allure.Allure.step;
 public class StudentRegistrationFormTests extends TestBase {
 
     @Test
-    @Feature("Fill the form test")
-    @Story("Student registration")
+    @Story("Fill the Student registration form")
+    @Feature("Student registration")
     @DisplayName("Successful fill registration form")
     void successfulFillFormTest() {
         Faker faker = new Faker();
@@ -102,8 +102,6 @@ public class StudentRegistrationFormTests extends TestBase {
     }
 
     @Test
-    @Feature("Unsuccessful fill the form test")
-    @Story("Student registration")
     @AllureId("1513")
     @DisplayName("Unsuccessful filling of the registration form without Last name")
     void unsuccessfulFillFormWithoutLastName() {
